@@ -3,7 +3,6 @@ import axios from "axios";
 
 const app = express();
 const  port = 3000;
-const chapter = 1;
 const config = {
     headers: {
       'X-RapidAPI-Key': '622e9946f6msh59b60898272652ep1d9ddajsn8dd7227eacc9',
@@ -23,6 +22,18 @@ app.get("/", async (req, res)=>{
         res.render("index.ejs", { summary: JSON.stringify(error.response.data) });
     }
     
+});
+
+app.post("/submit", async(req, res)=>{
+    // try {
+        // const chapter = req.body;
+        console.log(req.body);
+    //     const response = await axios.get(`https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${chapter}/`,config);
+    //     // console.log(JSON.stringify(response.data.chapter_number));
+    //     res.render("index.ejs", { chapter_num: JSON.stringify(response.data.chapter_number),title: JSON.stringify(response.data.name_translated),summary: JSON.stringify(response.data.chapter_summary)});
+    // }catch (error) {
+    //     res.render("index.ejs", { summary: JSON.stringify(error.response.data) });
+    // }
 });
 
 

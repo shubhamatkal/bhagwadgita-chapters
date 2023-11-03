@@ -26,19 +26,30 @@
       <div class="icon" style="margin-left: 120px;font-size: 20px;">
         Select the Chapter
       </div>
-      <div class="dropdown">
-        <select style="width: 200px; height: 40px;">
-          <option value="option1">Chapter 1</option>
-          <option value="option2">Chapter 2</option>
-          <option value="option3">Chapter 3</option>
-        </select>
-      </div>
-      <div class="search-button">
-        <button class="btn btn-primary d-inline-flex align-items-center" type="button">
-            Search
-            <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
-          </button>
-      </div>
+      <form id="myForm" method="post">
+            <div class="dropdown col-sm-6">
+                <select style="width: 200px; height: 40px;", name="selectedOption">
+                    <option name="1">Chapter 1</option>
+                    <option name="2">Chapter 2</option>
+                    <option name="3">Chapter 3</option>
+                    <option name="4">Chapter 4</option>
+                    <option name="5">Chapter 5</option>
+                    <option name="6">Chapter 6</option>
+                    <option name="7">Chapter 7</option>
+                    <option name="8">Chapter 8</option>
+                    <option name="9">Chapter 9</option>
+                    <option name="10">Chapter 10</option>
+                    <option name="11">Chapter 11</option>
+                    <option name="12">Chapter 12</option>
+                </select>
+            </div>
+            <div class="search-button col-sm-6">
+                <button class="btn btn-primary d-inline-flex align-items-center" type="submit" formaction="/submit">
+                    Search
+                    <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
+                </button>
+            </div>
+       </form>  
     </div>
     <div class="right-half">
       <!-- This right half is intentionally left blank -->
