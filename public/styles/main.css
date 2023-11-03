@@ -1,0 +1,14 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-half {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon, .dropdown, .search-button {
+    margin-right: 20px; /* Adjust the spacing between the elements as needed */
+  }

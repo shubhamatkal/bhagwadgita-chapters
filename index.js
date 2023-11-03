@@ -3,14 +3,12 @@ import axios from "axios";
 
 const app = express();
 const  port = 3000;
-const url = oikj
+// const url = oikj
 
 app.use(express.static("public"));
 
-app.get("/", async (req, res)=>{
-    try {
-        // const result = await axios.get(url)
-    }
+app.get("/", (req, res)=>{
+    res.render("index.ejs")
 });
 
 
