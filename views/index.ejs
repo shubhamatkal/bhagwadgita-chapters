@@ -49,11 +49,15 @@
 <div class="row">
     <div class="col-md-4 text-center">
       <!-- First section with "Chapter 1" -->
-      Chapter 1
+      <h2><%= chapter_num %></h2>
     </div>
-    <div class="col-md-8 text-center">
+    <div class="col-md-8">
       <!-- Second and third sections with chapter title -->
-      Title of Chapter
+      <% if (locals.title){ %>
+      <h2><%= title %></h2>
+      <%}else{%>
+        Title 
+        <%}%>
     </div>
   </div>
 <hr class="border-top my-1"> <!-- Add a horizontal line as a divider -->
@@ -62,7 +66,11 @@
       <div class="col-md-6 text-center">
         <div class="text-box">
           <!-- Your centered text box content goes here -->
-          This is a centered text box.
+          <% if (locals.summary){ %>
+            <%= summary %>
+            <%}else{%>
+                Summary of chapter
+            <%}%>
         </div>
       </div>
     </div>
